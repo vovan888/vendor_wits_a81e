@@ -4,7 +4,7 @@ TARGET_NO_BOOTLOADER := true
 TARGET_NO_KERNEL := true
 TARGET_PROVIDES_INIT_RC := true
 TARGET_NO_RADIOIMAGE := true
-#USE_CAMERA_STUB := true
+USE_CAMERA_STUB := true
 BOARD_USES_ALSA_AUDIO := true
 BUILD_WITH_ALSA_UTILS := true
 
@@ -20,7 +20,19 @@ TARGET_CPU_ABI2 := armeabi
 
 TARGET_ARCH_VARIANT := armv7-a-neon
 
-#HARDWARE_OMX := true
+# Wifi
+BOARD_WPA_SUPPLICANT_DRIVER := CUSTOM
+BOARD_WLAN_DEVICE           := wl1271
+BOARD_SOFTAP_DEVICE         := wl1271
+WPA_SUPPLICANT_VERSION      := VER_0_6_X
+WIFI_DRIVER_MODULE_PATH     := "/system/etc/wifi/tiwlan_drv.ko"
+WIFI_DRIVER_MODULE_NAME     := "tiwlan_drv"
+WIFI_FIRMWARE_LOADER        := "wlan_loader"
+
+# Bluetooth
+BOARD_HAVE_BLUETOOTH := true
+
+HARDWARE_OMX := true
 
 ifdef HARDWARE_OMX
 OMX_JPEG := true

@@ -8,7 +8,7 @@ PRODUCT_PACKAGES := \
 $(call inherit-product, build/target/product/generic.mk)
 
 # Overrides
-PRODUCT_BRAND := TI
-PRODUCT_NAME := omap3evm
-PRODUCT_DEVICE := omap3evm
+PRODUCT_BRAND := WITS
+PRODUCT_NAME := a81e
+PRODUCT_DEVICE := a81e
 PRODUCT_PACKAGE_OVERLAYS := device/rowboat/generic

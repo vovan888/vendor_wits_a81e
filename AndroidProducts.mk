@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/omap3evm.mk 
+	$(LOCAL_DIR)/a81e.mk 
